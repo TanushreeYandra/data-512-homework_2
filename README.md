@@ -1,1 +1,9 @@
-# data-512-homework_2
+# DATA512 - Homework 2: Considering Bias in Data
+## Coverage and Quality Analysis of US Cities in Wikipedia Articles
+
+The aim of this assignment is to explore the concept of bias in data using Wikipedia articles. The articles considered for this study are about cities in different US states. For this assignment, a dataset of Wikipedia articles was combined with a dataset of state populations, and a machine learning service called ORES was used to estimate the quality of the articles about the cities. An analysis was then conducted on how the coverage of US cities on Wikipedia and how the quality of articles about cities varies among states.
+
+The source datasets for this analysis were as follows:
+1. The Wikipedia ['Category:Lists of cities in the United States by state'](https://en.wikipedia.org/wiki/Category:Lists_of_cities_in_the_United_States_by_state) which was crawled to generate a list of Wikipedia article pages about US cities from each state. This data can be found in [us_cities_by_state_SEPT.2023.csv](https://drive.google.com/file/d/1khouDmMaZyKo0y5WkFj4lu7g8o35x_98/view?usp=sharing).
+2. The US Census Bureau which provides updated population estimates for every US state. The data can be found on ['State Population Totals and Components of Change: 2020-2022'](https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html) from their website. An Excel file linked to that page contains estimated populations of all US states for 2022. 
+3. Finally, the 'region' demarcation within the US to agglomerate states into defined regions. For this analysis, the regional and divisional agglomerations as defined by the US Census Bureau were used. The data for the same can be found in ['US States by Region - US Census Bureau'](https://docs.google.com/spreadsheets/d/14Sjfd_u_7N9SSyQ7bmxfebF_2XpR8QamvmNntKDIQB0/edit?usp=sharing).
