@@ -14,4 +14,7 @@ In this study, two intermediate data files and one final output file were saved 
 
 The final output file for the analysis was a merged dataframe created by merging the three datasets discussed earlier. The file was saved as a CSV file with six columns - state, regional_division, population, article_title, revision_id and article_quality. Apart from population and revision_id which were integers, the rest four columns were string values.
 
+There are quite a many considerations about the data - both source and the output files. While the source data had a lot of preprocessing to do, the output files had some interesting thing to consider. Both these aspects have been covered in detail in the 'Coverage_And_Quality_Analysis' notebook of the repository.
+
+### Research Implications:
 
