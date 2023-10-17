@@ -14,7 +14,28 @@ In this study, two intermediate data files and one final output file were saved 
 
 The final output file for the analysis was a merged dataframe created by merging the three datasets discussed earlier. The file was saved as a CSV file with six columns - state, regional_division, population, article_title, revision_id and article_quality. Apart from population and revision_id which were integers, the rest four columns were string values.
 
-There are quite a many considerations about the data - both source and the output files. While the source data had a lot of preprocessing to do, the output files had some interesting thing to consider. Both these aspects have been covered in detail in the 'Coverage_And_Quality_Analysis' notebook of the repository.
+This final output file was used to calculate total-articles-per-population (a ratio representing the number of articles per person) and high-quality-articles-per-population (a ratio representing the number of high quality articles per person) on a state-by-state and divisional basis. This was then used to construct six following tables:
+1. Top 10 US states by coverage: The 10 US states with the highest total articles per capita (in descending order) .
+2. Bottom 10 US states by coverage: The 10 US states with the lowest total articles per capita (in ascending order) .
+3. Top 10 US states by high quality: The 10 US states with the highest high quality articles per capita (in descending order) .
+4. Bottom 10 US states by high quality: The 10 US states with the lowest high quality articles per capita (in ascending order).
+5. Census divisions by total coverage: A rank ordered list of US census divisions (in descending order) by total articles per capita.
+6. Census divisions by high quality coverage: Rank ordered list of US census divisions (in descending order) by high quality articles per capita.
+
+There are quite a few considerations about the data - both source and the output files. While the source data had a lot of preprocessing to do, the output files had some interesting thing to consider. Both these aspects have been covered in detail in the 'Coverage_And_Quality_Analysis' notebook of the repository.
 
 ### Research Implications:
 
+This study exposed me to working with APIs and performing relevant preprocessing techniques to ensure data consistency. This study also helped me understand to explore the concept of bias and how bias creeps in through several factors. One would expect Wikipedia to be moderately reliable but I was surprised to find out that the articles' data was missing completely for two whole states. Another interesting fact I noticed was that some of the less-populated states had a higher coverage and quality of articles per capita. I expected California to have a higher quality of articles and higher coverage as it is a big and major state. However, it was in the bottom ten for both coverage and high quality articles per capita. Further made me realise that it could probably be attributed to the extremely high population numbers which thereby reduces the per-capita value. Some other questions I would like to address as a part of my reflection are:
+
+1. What biases did you expect to find in the data (before you started working with it), and why?
+   * Coverage Bias: Wikipedia articles may not cover all US cities equally. Larger, more well-known cities are more likely to have articles, while smaller or less prominent cities may be underrepresented.
+   * Quality Bias: Articles about US cities may vary in quality. Major cities are more likely to have well-maintained and higher quality articles, while smaller cities may have less informative or lower quality articles.
+
+2. What (potential) sources of bias did you discover in the course of your data processing and analysis?
+   * Population Bias: The coverage of US cities on Wikipedia may not align with their population sizes. Some states with small populations may have a high number of articles about cities, while states with large populations may be underrepresented.
+   * Regional Bias: The regional division definitions used by the US Census Bureau may introduce regional biases in the analysis. These definitions are subject to various factors and thus, this might not accurately represent regional divisions from other perspectives.
+
+3. What might your results suggest about (English) Wikipedia as a data source?
+   * As discussed earlier, the results suggest that Wikipedia may not be a uniform or unbiased source of information. Both coverage and quality of content can vary significantly across different states and regions. This has implications for understanding how knowledge is represented and accessed online, with potentially less information about certain cities and regions.
+   * Thus, additional efforts are needed to ensure a more comprehensive and equitable representation of US cities on Wikipedia.
